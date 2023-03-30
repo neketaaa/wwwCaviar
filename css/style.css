@@ -1,0 +1,404 @@
+    @font-face {
+        font-family: 'Univermag';
+        src: url('fonts/univermag.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'KyivType';
+        src: url(fonts/KyivTypeSans.ttf) format('truetype');
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(164, 146, 146, 0.2);
+        height: 15vh;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+    }
+
+    .header {
+        position: fixed;
+        /*border: 1px solid red;*/
+        height: 15vh;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .naming {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+        height: 15vh;
+        padding:3vh 0;
+    }
+
+    .name {
+        font-family: 'Univermag';
+
+        font-size: 3.5em;
+        align-self: center;
+        margin-bottom: auto;
+    }
+
+    .sec-name {
+        font-family: 'Univermag';
+        font-size: 1.5em;
+        align-self: center;
+        margin-top: auto;
+    }
+
+    .order {
+        font-size: 2em;
+        font-family: 'KyivType';
+        border: 0.2rem solid #A17646;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0.5rem;
+        text-align: center;
+        background-color: gold;
+        transition: background-color 0.5s ease;
+    }
+
+    .order:hover {
+        transform: scale(1.1);
+    }
+
+    .order:active {
+        transform: translateY(0.1rem);
+    }
+
+    .fa-bars {
+        font-size: 5.5em;
+        color: goldenrod;
+    }
+
+    .fa-bars:hover {
+        transform: scale(1.1);
+    }
+
+    .fa-bars:active {
+        transform: translateY(0.1rem);
+    }
+
+    .first-view {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .first-view::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/pxfuel.jpg");
+        filter: contrast(100%) saturate(0%) brightness(50%);
+    }
+
+    .circles-block {
+        height: 85vh;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        filter: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    .circle {
+        filter: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px solid #A17646;
+        border-radius: 100%;
+        height: 19em;
+        width: 19em;
+    }
+
+    .circle-text {
+        filter: none;
+        text-align: center;
+        font-family: Univermag;
+        font-size: 2.5em;
+    }
+
+    .even-block {
+        display: flex;
+        justify-content: center;
+        background-color: #EEEAEA;
+        height: 100vh;
+    }
+
+    .container {
+        padding: 0;
+        width: 90%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding-bottom: 35px;
+    }
+
+    .title {
+        font-family: Univermag;
+        font-size: 4em;
+        text-align: justify;
+        vertical-align: initial;
+        height: auto;
+    }
+
+    .title-line {
+        width: 30%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .content-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 75vh;
+    }
+
+    .content {
+        height: auto;
+        width: 525px;
+        font-family: KyivType;
+        font-size: 1.75em;
+        text-align: justify;
+        vertical-align: initial;
+    }
+
+    .content-img {
+        height: 540px;
+        width: 525px;
+    }
+
+    .uneven-block {
+        height: 100vh;
+    }
+
+    .pre-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10vh 0;
+        border-bottom: 3px solid black;
+    }
+
+    footer {
+        display: flex;
+        margin-left: 5%;
+        width: 90%;
+        justify-content: space-between;
+        padding: 5vh 0;
+        color: black;
+    }
+
+    .footer-left {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-naming {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+        text-align: right;
+    }
+
+    .footer-name {
+        font-family: Univermag;
+        font-size: 3em;
+    }
+
+    .footer-sec-name {
+        font-family: KyivType;
+        font-size: 1.5em;
+    }
+
+    .fa-brands:hover {
+        transform: scale(1.1);
+        color: #A17646;
+    }
+
+    .fa-brands:active {
+        transform: translateY(0.1rem);
+    }
+
+    .contact-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .contact {
+        font-family: KyivType;
+        font-size: 2em;
+        text-decoration: 2px underline;
+    }
+
+
+    .footer-right {
+        font-family: KyivType;
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+
+    .footer-right:hover {
+        color: #A17646;
+    }
+
+    .gold {
+        color: #fff;
+        background-image: linear-gradient(
+                80deg,
+                hsl(28deg 51% 29%) 0%,
+                hsl(27deg 51% 28%) 5%,
+                hsl(26deg 51% 27%) 9%,
+                hsl(26deg 51% 25%) 14%,
+                hsl(25deg 51% 24%) 18%,
+                hsl(24deg 51% 23%) 23%,
+                hsl(25deg 49% 24%) 27%,
+                hsl(26deg 46% 28%) 32%,
+                hsl(27deg 44% 33%) 36%,
+                hsl(29deg 42% 37%) 41%,
+                hsl(30deg 41% 41%) 45%,
+                hsl(32deg 39% 45%) 50%,
+                hsl(32deg 39% 49%) 55%,
+                hsl(33deg 42% 52%) 59%,
+                hsl(34deg 48% 56%) 64%,
+                hsl(35deg 55% 60%) 68%,
+                hsl(36deg 64% 63%) 73%,
+                hsl(36deg 69% 66%) 77%,
+                hsl(36deg 71% 68%) 82%,
+                hsl(36deg 73% 69%) 86%,
+                hsl(36deg 76% 71%) 91%,
+                hsl(36deg 78% 73%) 95%,
+                hsl(36deg 81% 75%) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+@media screen and (max-width: 1024px) {
+
+    .name {
+        font-size: 2.5em;
+        transition:.5s;
+    }
+
+    .sec-name {
+        font-size: .75em;
+        transition:.5s;
+    }
+
+    .order {
+        font-size: 1em;
+        transition:.5s;
+    }
+
+    .fa-bars {
+        font-size: 3em;
+        transition:.5s;
+    }
+
+
+    .circle {
+        height: 13em;
+        width: 13em;
+        transition:.5s;
+    }
+
+    .circle-text {
+        font-size: 2em;
+        transition:.5s;
+    }
+
+
+    .container {
+        padding: 0;
+        width: 721px;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding-bottom: 35px;
+    }
+
+    .title {
+        font-family: Univermag;
+        font-size: 3em;
+        text-align: justify;
+        vertical-align: initial;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .title-line {
+        width: 33%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .content-wrap {
+        flex-direction: column;
+    }
+
+    .content {
+        height: auto;
+        width: 100%;
+        font-family: KyivType;
+        font-size: 1em;
+        text-align: justify;
+        vertical-align: initial;
+    }
+
+    .content-img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .circles-block {
+        flex-direction: column;
+        font-size: 1em;
+    }
+}
