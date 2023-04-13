@@ -177,7 +177,7 @@
     }
 
     .content-wrap {
-        width: 100%;
+        width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -186,21 +186,30 @@
 
     .content {
         height: auto;
-        width: 525px;
+        width: 45%;
         font-family: KyivType;
         font-size: 1.75em;
         text-align: justify;
         vertical-align: initial;
     }
 
-    .content-img {
-        height: 540px;
-        width: 525px;
+    .content-img {height: auto; width: 45%;}
+    .content-img img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
+
+    /*.content-img {*/
+    /*    height: 540px;*/
+    /*    width: 525px;*/
+    /*}*/
 
 
     .uneven-block {
         height: 100vh;
+        display: flex;
+        justify-content: center;
     }
 
     .pre-footer {
