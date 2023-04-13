@@ -29,6 +29,14 @@
     .footer-name {
         font-size: 2em;
     }
+
+    .about-title {
+        font-size: 1.8em;
+    }
+
+    .about-content {
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -55,6 +63,15 @@
     .fa-bars {
         font-size: 2em;
     }
+
+    .about-title {
+        font-size: 1.4em;
+    }
+
+    .about-content {
+        font-size: 1.1em;
+    }
+
 }
 
 
@@ -87,4 +104,10 @@
     .content-wrap {margin: 0; flex-wrap: wrap;}
     .content-img {width: auto; margin: 0; order: 2;}
     .title-wrap {height: auto; padding: 27px 0 25px;}
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.5em;
+    }
 }
