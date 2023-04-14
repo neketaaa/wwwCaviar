@@ -62,3 +62,14 @@ function rollSlider() {
     text_move();
 }
 
+window.addEventListener("resize", function () {
+    images[0].src = 'css/images/catalog-mixed.png';
+    images[1].src = 'css/images/catalog-red.png';
+    images[2].src = 'css/images/catalog-black.png';
+    if (width < 500) {
+        images[0].src = 'css/images/mobile-catalog-mixed.png';
+        images[1].src = 'css/images/mobile-catalog-red.png';
+        images[2].src = 'css/images/mobile-catalog-black.png';
+    }
+});
+

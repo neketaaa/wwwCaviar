@@ -109,7 +109,10 @@
     .content-img {width: auto; margin: 0; order: 2;}
     .title-wrap {height: auto; padding: 27px 0 25px;}
     .catalog-text-wrap {
-        font-size: 1.1em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*font-size: 1.1em;*/
     }
 }
 
@@ -118,6 +121,6 @@
         font-size: 1.5em;
     }
     .catalog-text-wrap {
-        font-size: 0.8em;
+        font-size: 1.1em;
     }
 }
