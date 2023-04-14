@@ -26,7 +26,6 @@ function text_move() {
 }
 
 function init() {
-    // caviar_names[1].style.textDecoration = 'underline';
 
     console.log('resize');
     width = document.querySelector('.slider').offsetWidth;
@@ -36,6 +35,7 @@ function init() {
         item.style.height = 'auto';
     });
     rollSlider();
+    mobile_img();
 }
 
 init();
@@ -62,7 +62,7 @@ function rollSlider() {
     text_move();
 }
 
-window.addEventListener("resize", function () {
+function mobile_img() {
     images[0].src = 'css/images/catalog-mixed.png';
     images[1].src = 'css/images/catalog-red.png';
     images[2].src = 'css/images/catalog-black.png';
@@ -71,5 +71,6 @@ window.addEventListener("resize", function () {
         images[1].src = 'css/images/mobile-catalog-red.png';
         images[2].src = 'css/images/mobile-catalog-black.png';
     }
-});
+}
+window.addEventListener("resize", mobile_img());
 
