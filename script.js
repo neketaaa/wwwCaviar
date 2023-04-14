@@ -1,9 +1,33 @@
 const images = document.querySelectorAll('.slider .slider-line img');
 const sliderLine = document.querySelector('.slider .slider-line');
+const caviar_names = document.querySelectorAll('#catalog-red-text, #catalog-black-text, #catalog-offer-text');
 let count = 0;
 let width;
 
+function text_move() {
+
+    console.log(count, caviar_names[count]);
+
+    if(count == 0) {
+        caviar_names[1].style.textDecoration = 'underline';
+        caviar_names[0].style.textDecoration = 'none';
+        caviar_names[2].style.textDecoration = 'none';
+    }
+    if(count == 1) {
+        caviar_names[2].style.textDecoration = 'underline';
+        caviar_names[0].style.textDecoration = 'none';
+        caviar_names[1].style.textDecoration = 'none';
+    }
+    if(count == 2) {
+        caviar_names[0].style.textDecoration = 'underline';
+        caviar_names[1].style.textDecoration = 'none';
+        caviar_names[2].style.textDecoration = 'none';
+    }
+}
+
 function init() {
+    // caviar_names[1].style.textDecoration = 'underline';
+
     console.log('resize');
     width = document.querySelector('.slider').offsetWidth;
     sliderLine.style.width = width * images.length + 'px';
@@ -35,5 +59,6 @@ document.querySelector('.slider-prev').addEventListener('click', function () {
 
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-
+    text_move();
 }
+
