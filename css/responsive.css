@@ -37,6 +37,15 @@
     .about-content {
         font-size: 1.3em;
     }
+
+    .tile {
+        overflow: visible;
+    }
+
+    .tile-text {
+        bottom: -5%;
+        background-color: hsla(50.9,46.9%,77.8%, 0.1);
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -72,14 +81,7 @@
         font-size: 1.1em;
     }
 
-    .tile {
-        overflow: visible;
-    }
 
-    .tile-text {
-        bottom: -5%;
-        background-color: hsla(50.9,46.9%,77.8%, 0.1);
-    }
 
 
 

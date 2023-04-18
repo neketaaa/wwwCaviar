@@ -74,3 +74,5 @@ function mobile_img() {
 }
 window.addEventListener("resize", mobile_img());
 
+
+
