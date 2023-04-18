@@ -40,14 +40,14 @@
     .name {
         font-family: 'Univermag';
 
-        font-size: 3.5em;
+        font-size: 2em;
         align-self: center;
         margin-bottom: auto;
     }
 
     .sec-name {
         font-family: 'Univermag';
-        font-size: 1.5em;
+        font-size: 1em;
         align-self: center;
         margin-top: auto;
     }
@@ -351,7 +351,7 @@
 
     body, .naming h1, .naming h6 {margin: 0;}
     a {color: black; text-decoration: none}
-
+    
 
     /*.slider {*/
     /*    height: auto;*/
