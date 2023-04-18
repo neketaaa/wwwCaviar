@@ -490,7 +490,7 @@
         font-size: 1em;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+            justify-content: end;
     }
 
     .tile:hover .tile-text {
@@ -499,7 +499,82 @@
     }
 
     .item-container {
-        width: 90%;
         display: flex;
-        margin: auto;
+        justify-content: center;
+        padding-top: 20vh;
+        padding-bottom: 10vh;
+        border-bottom: 2px solid black;
+    }
+
+    .item-wrap {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .item-photo img {
+        height: 524px;
+        width: 524px;
+    }
+
+
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item-title {
+        font-family: KyivType;
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+    .item-price {
+        font-family: KyivType;
+        font-size: 2em;
+        padding: 2em 0;
+    }
+
+    #counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2em;
+    }
+
+    #counter-title {
+        font-size: 1.5em;
+        font-family: KyivType;
+        align-self: center;
+    }
+
+    #buttonCountPlus, #buttonCountMinus {
+        font-size: 3em;
+        height: 2em;
+        width: 2em;
+        border-radius: 100%;
+        border: 2px solid black;
+        /*padding-bottom: 1em;*/
+    }
+
+    #buttonCountNumber {
+        font-size: 2em;
+        font-family: KyivType;
+    }
+
+    #buttonCountMinus:hover {
+        background-color: orange;
+    }
+
+    #buttonCountPlus:hover {
+        background-color: orange;
+    }
+
+    #buttonCountMinus:active {
+        background-color: white;
+    }
+
+    #buttonCountPlus:active {
+        background-color: white;
     }
