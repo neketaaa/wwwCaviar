@@ -21,22 +21,23 @@
   </div>
 </header>
 <main>
-  <div class="container-wrap">
-    <div class="help-container">
-      <div class="title-wrap">
-        <div class="title-line"></div>
-        <div class="title gold">Чорна ікра</div>
-        <div class="title-line"></div>
+  <div class="item-container">
+    <div class="item-wrap">
+      <div class="item-photo"><img src="css/images/tile_garbusha500.png"></div>
+      <div class="item-info">
+        <div class="item-title">Ікра Горбуша 500гр</div>
+        <div class="item-price">Ціна: 1800грн</div>
+        <div id="counter-title"><strong>Кількість</strong></div>
+        <div id="counter">
+          <input type="button" id="buttonCountMinus" value="-">
+          <div id="buttonCountNumber">1</div>
+          <input type="button" id="buttonCountPlus" value="+">
+        </div>
+        <span class="order gold">У кошик</span>
       </div>
-    </div>
-    <div class="tile-wrap">
-      <div class="tile"><a href="item_osetra100.html"><img src="css/images/tile_osetra100.png" class="tile-img"></a><div class="tile-text">Ікра Осетра 100гр <p>Ціна: 2599грн</p></div></div>
-      <div class="tile"><a href="item_osetra200.html"><img src="css/images/tile_osetra200.png" class="tile-img"></a><div class="tile-text">Ікра Осетра 200гр <p>Ціна: 5000грн</p></div></div>
-      <div class="tile"><a href="item_osetra500.html"><img src="css/images/tile_osetra500.png" class="tile-img"></a><div class="tile-text">Ікра Осетра 500гр <p>Ціна: 13000грн</p></div></div>
     </div>
   </div>
 </main>
-
 <footer>
   <div class="footer-left">
     <div class="footer-naming">
@@ -62,5 +63,26 @@
   </a>
 
 </footer>
+<script>
+  //counter
+
+  let count1 = document.getElementById("buttonCountNumber");
+  document.getElementById("buttonCountPlus").onclick = function() {
+    console.log('plus')
+    let countPlus = count1.innerHTML;
+    if(+countPlus <= 9){
+      count1.innerHTML++;
+      let countPlus = count1.innerHTML;
+    }
+  }
+
+  document.getElementById("buttonCountMinus").onclick = function() {
+    console.log('minus')
+    let countMinus = count1.innerHTML;
+    if(+countMinus >= 2){
+      count1.innerHTML--;
+      let countMinus = count1.innerHTML;
+    }
+  }</script>
 </body>
 </html>

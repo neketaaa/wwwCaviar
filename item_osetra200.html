@@ -23,10 +23,10 @@
 <main>
     <div class="item-container">
         <div class="item-wrap">
-            <div class="item-photo"><img src="css/images/tile_shuka100.png"></div>
+            <div class="item-photo"><img src="css/images/tile_osetra200.png"></div>
             <div class="item-info">
-                <div class="item-title">Ікра щука 100гр</div>
-                <div class="item-price">Ціна: 399грн</div>
+                <div class="item-title">Ікра Осетра 200гр</div>
+                <div class="item-price">Ціна: 5000грн</div>
                 <div id="counter-title"><strong>Кількість</strong></div>
                 <div id="counter">
                     <input type="button" id="buttonCountMinus" value="-">
@@ -66,23 +66,23 @@
 <script>
     //counter
 
-let count1 = document.getElementById("buttonCountNumber");
-document.getElementById("buttonCountPlus").onclick = function() {
-    console.log('plus')
-    let countPlus = count1.innerHTML;
-    if(+countPlus <= 9){
-        count1.innerHTML++;
+    let count1 = document.getElementById("buttonCountNumber");
+    document.getElementById("buttonCountPlus").onclick = function() {
+        console.log('plus')
         let countPlus = count1.innerHTML;
+        if(+countPlus <= 9){
+            count1.innerHTML++;
+            let countPlus = count1.innerHTML;
+        }
     }
-}
 
-document.getElementById("buttonCountMinus").onclick = function() {
-    console.log('minus')
-    let countMinus = count1.innerHTML;
-    if(+countMinus >= 2){
-        count1.innerHTML--;
+    document.getElementById("buttonCountMinus").onclick = function() {
+        console.log('minus')
         let countMinus = count1.innerHTML;
-    }
-}</script>
+        if(+countMinus >= 2){
+            count1.innerHTML--;
+            let countMinus = count1.innerHTML;
+        }
+    }</script>
 </body>
 </html>

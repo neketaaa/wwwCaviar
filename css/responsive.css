@@ -63,6 +63,11 @@
     #buttonCountPlus, #buttonCountMinus {
         font-size: 2em;
     }
+
+    .is-empty {
+        font-size: 3.5em;
+    }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -116,6 +121,11 @@
 
     #buttonCountNumber {
         font-size: 1.5em;
+    }
+
+    .is-empty {
+        padding-top: 10vh;
+        font-size: 3em;
     }
 
 }
@@ -174,6 +184,10 @@
         align-items: center;
         /*font-size: 1.1em;*/
     }
+
+    .is-empty {
+        font-size: 2.3em;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -182,5 +196,9 @@
     }
     .catalog-text-wrap {
         font-size: 1.1em;
+    }
+
+    .is-empty {
+        font-size: 1.5em;
     }
 }
